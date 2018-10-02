@@ -1,0 +1,29 @@
+  Criei 3 classes (Cliente, Cinema e Controller) e a Principal.
+  Na classe Cliente criei dois atributos privados (nome e telefone), após isso criei o construtor, getters e setters para cada 
+atributo e o método toString().
+  Na classe Cinema, criei 3 atributos privados (numCadeira, que é o numero de cadeiras que a sala do cinema vai ter; cadeiras,
+que é o array de Cliente; estadoCadeira, que é para visualizar se a cadeira está vaga ou não. Após isto, criei os métodos getters
+e setters, e os métodos necessários: criarSala(), para criar a sala com o numero de cadeiras; reservar(), para um cliente fazer
+uma reserva; cancelar(), para cancelar a reserva do cliente; e o toString().
+  No método reservar(), primeiro eu instancio um cliente, através das varáveis passadas pelo principal. Depois, é preciso fazer
+algumas checagens, 1° se o array de cadeira (do tipo cliente) não está vazio, ou seja, undefined, 2° se o cliente já esta neste
+array e se a cadeira que o cliente pediu está com vaga. Para este fiz o loop for. Lembrando que, ao fazer a reserva do cliente,
+é necessário, neste prorama, atualizar o array de estadoCadeira, pois quando o cliente fizer uma reserva em uma posição, aquela
+mesma posição, do estadoCadeira, deve ficar "0", pois ali não terá mais vaga.
+  No método cancelar(), eu procuro se o array não está vazio e se o cliente está naquele array, se o cliente estiver: primeiro
+procuro a posição deste cliente através do método indexOf() passando o id que estou procurando e uso o método splice, passando
+este index, a quantidade de posições que quero remover, no caso 1 e substituindo este valor por undefined, para que este espaço
+seja possível fazer outra reserva. Lembrando, também, de alterar o array de estadoCadeira, na mesma posição, para "1", assim
+informando que aquele espaço está vago.
+  Na classe Controller, crio a variável opc privada, faço seu getter e setter e crio 2 métodos (menu() e operacao()). O método
+menu() irá mostrar o menu que eu quero que o usuário veja e este método irá pedir para o usuário inserir uma opção. No método
+operacao() faço um switch-case passando este atributo (opc). Tendo o caso 1 pra criar a sala, onde irá perguntar quantas cadeiras
+a sala vai ter, e neste caso será criado os arrays de estadoCadeira[] e cadeira[] com o tamanho de numCadeira e será instanciado
+uma variável do tipo Cinema. O caso 2 apenas irá mostrar a sala pelo o toString do cinema. O caso 3 irá fazer a reserva, pedindo
+para o usuário inserir o id, telefone e o lugar onde o cliente quer ficar, depois faço um if chamando o método reservar() da instância
+do cinema. O caso 4 irá cancelar a reserva, pedindo o id do cliente e depois, um if chamando o método cancelar() da instância do cinema.
+E o caso 0 irá encerrar o programa.
+  Na Principal, apenas instancio um controller e passo o método menu() desta instância.
+  
+  Aprendi a manipular um pouco de array no typescript, tive dificuldades com o undefined e algumas manipulações de array. Pedi
+ ajuda ao meu namorado e ao monitor. 
