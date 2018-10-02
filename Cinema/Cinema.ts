@@ -60,6 +60,8 @@ export class Cinema{
                 this.cadeiras.splice(pos, 1, undefined);
                 this.estadoCadeira.splice(pos, 1, 1);
                 return true;
+            }else{
+                return false;
             }
         }
     }
