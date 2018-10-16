@@ -1,0 +1,9 @@
+    Criei 4 classes e a Principal.
+    Classe Funcionario para ser a super-classe, onde tem os atributos gerais, que as outras classes irão
+herdar e os métodos, também gerais.
+    Classe Sta, Ter e Professor herdam da super-classe Funcionario os atributos, métodos e nelas eu sobrescrevo
+os métodos, para fazer as operações necessárias.
+    Fiz o trabalho sozinha e com um pouco de ajuda do meu namorado em alguns erros que estava dando na hora
+de exibir os funcionários.
+    Aprendi a usar herança e reforcei meus conhecimentos com polimorfismo. Não foi um trabalho complicado.
+    Levei em média de 2 dias para fazer o trabalho, já que deixei para terminar depois.
